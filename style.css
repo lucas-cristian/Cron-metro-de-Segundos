@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center h-screen;
+}
+
+.container {
+    @apply text-center;
+}
+
+.title {
+    @apply text-white text-5xl font-bold mb-6;
+}
+
+.timer {
+    @apply text-6xl text-white font-semibold mb-8;
+}
+
+.buttons {
+    @apply space-x-4;
+}
+
+.btn {
+    @apply px-6 py-3 text-white font-bold rounded-lg;
+}
+
+.btn-green {
+    @apply bg-green-500 hover:bg-green-700;
+}
+
+.btn-red {
+    @apply bg-red-500 hover:bg-red-700;
+}
